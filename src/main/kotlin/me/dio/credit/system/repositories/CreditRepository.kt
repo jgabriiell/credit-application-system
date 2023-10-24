@@ -1,8 +1,6 @@
 package me.dio.credit.system.repositories
 
-import jakarta.persistence.Id
 import me.dio.credit.system.domain.Credit
-import org.aspectj.apache.bcel.classfile.Code
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.stereotype.Repository
