@@ -2,6 +2,7 @@ package me.dio.credit.system.domain
 
 import jakarta.persistence.*
 import me.dio.credit.system.domain.Address
+import java.math.BigDecimal
 
 @Entity
 @Table(name = "Cliente")
@@ -14,10 +15,13 @@ data class Customer(
     var lastName: String = "",
 
     @Column(nullable = false, unique = true)
-    val cpf: String,
+    val cpf: String = "",
 
     @Column(nullable = false, unique = true)
     var email: String = "",
+
+    @Column(nullable = false)
+    var income: BigDecimal = BigDecimal.ZERO,
 
     @Column(nullable = false)
     var password: String = "",
