@@ -7,7 +7,7 @@ import java.time.LocalDate
 import java.util.UUID
 
 @Entity
-@Table(name = "Credito")
+@Table(name = "Credit")
 data class Credit (
 
         @Column(nullable = false, unique = true)
