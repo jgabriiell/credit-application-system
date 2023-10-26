@@ -16,7 +16,7 @@ data class CreditDto(
     @field:Future(message = "Invalid date")
     val dayFirstOfInstallment: LocalDate,
 
-    @Size(max = 8)
+    @Size(max = 48)
     val numberOfInstallment: Int,
 
     @field:NotNull(message = "Invalid input, some data is missing")
